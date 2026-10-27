@@ -16,13 +16,13 @@
 </head>
 <body>
 <h1>Qiāoyǔ (悄語) — Privacy Policy <span class="zh">隐私政策</span></h1>
-<p><strong>Effective date / 生效日期:</strong> 28 August 2026<br>
+<p><strong>Effective date / 生效日期:</strong> 28 October 2026<br>
 <strong>Developer / 开发者:</strong> Kaomi Dev Studio &nbsp;·&nbsp; <a href="mailto:kaomiwings@gmail.com">kaomiwings@gmail.com</a><br>
-<strong>App / 应用:</strong> Qiāoyǔ — Cultivate Clarity (package <code>com.mindflow.app</code>)</p>
+<strong>App / 应用:</strong> Qiāoyǔ — Cultivate Clarity (Android package <code>com.kaomidevstudio.qiaoyu</code>; iOS bundle ID <code>com.kaomidevstudio.qiaoyu</code>)</p>
 
 <h2>1. The short version <span class="zh">/ 摘要</span></h2>
-<p>Qiāoyǔ is a private journaling and mindfulness app. <strong>Everything you write, record, or photograph stays on your device.</strong> The app has no user accounts, no analytics, no advertising, and does not transmit your journal content, recordings, images, location, or birth details to us or to any third party.</p>
-<p class="zh">悄語是一款私密的日记与正念应用。<strong>您撰写、录制或拍摄的所有内容都只保存在您的设备上。</strong>本应用没有用户账户、没有分析统计、没有广告，也不会将您的日记内容、录音、图片、位置或出生信息传输给我们或任何第三方。</p>
+<p>Qiāoyǔ is a private journaling and mindfulness app. <strong>Everything you write, record, or photograph stays on your device.</strong> The app has no user accounts, no analytics, no advertising, and does not transmit your journal content, recordings, images, location, or birth details to us or to any third party. The only exceptions are operating-system services that you choose to use on your device, which are described for iPhone in section 4A.</p>
+<p class="zh">悄語是一款私密的日记与正念应用。<strong>您撰写、录制或拍摄的所有内容都只保存在您的设备上。</strong>本应用没有用户账户、没有分析统计、没有广告，也不会将您的日记内容、录音、图片、位置或出生信息传输给我们或任何第三方。唯一的例外是您主动使用的设备操作系统服务，iPhone 上的情况见第 4A 节。</p>
 
 <h2>2. Data the app stores (on your device only) <span class="zh">/ 应用在您设备上存储的数据</span></h2>
 <table>
@@ -31,7 +31,7 @@
 <tr><td>Voice recordings &amp; transcriptions<br class="zh">语音录音与转写文本</td><td>Voice notes. Recorded only when you tap record; saved locally. Speech-to-text runs via your device's speech service.<br class="zh">语音笔记。仅在您点击录音时录制并保存在本地。语音转文字由设备自带的语音服务完成。</td></tr>
 <tr><td>Photos &amp; extracted text (OCR)<br class="zh">照片与识别文字</td><td>Photo thoughts. Text recognition runs fully on-device (Google ML Kit).<br class="zh">照片想法。文字识别完全在设备上进行（Google ML Kit）。</td></tr>
 <tr><td>Approximate/precise location (optional)<br class="zh">位置（可选）</td><td>Only if you enable location tagging for a thought. Stored locally with that entry; never transmitted.<br class="zh">仅当您为某条想法开启位置标记时使用，随该条目保存在本地，绝不上传。</td></tr>
-<tr><td>Name, birth date/time/place (optional)<br class="zh">姓名、出生日期/时间/地点（可选）</td><td>Used on-device to personalize daily wisdom. Never transmitted.<br class="zh">仅在设备上用于个性化每日智慧内容，绝不上传。</td></tr>
+<tr><td>Name and birth date (asked once at setup); birth time and place (optional)<br class="zh">姓名与出生日期（首次设置时填写）；出生时间与地点（可选）</td><td>Used on-device to personalize daily wisdom. Never transmitted.<br class="zh">仅在设备上用于个性化每日智慧内容，绝不上传。</td></tr>
 <tr><td>PIN &amp; biometric app lock<br class="zh">PIN 与生物识别应用锁</td><td>Your PIN is stored locally. Biometric verification is performed by the Android system; the app never sees or stores your fingerprint/face data.<br class="zh">PIN 保存在本地。生物识别由 Android 系统完成，应用不会接触或存储您的指纹/面部数据。</td></tr>
 </table>
 
@@ -42,6 +42,30 @@
 <h2>4. Permissions <span class="zh">/ 权限说明</span></h2>
 <p>Microphone (voice notes), Camera (photo thoughts), Location (optional thought tagging), Notifications &amp; alarms (your daily reminders), Biometrics (app lock). Every permission is requested only when you use the feature, and each is optional.</p>
 <p class="zh">麦克风（语音笔记）、相机（照片想法）、位置（可选的想法位置标记）、通知与提醒（每日提醒）、生物识别（应用锁）。所有权限仅在您使用相应功能时请求，均为可选。</p>
+
+<h2 id="ios">4A. On iOS (iPhone) <span class="zh">/ 在 iPhone (iOS) 上</span></h2>
+<p>This section applies to the iPhone version of Qiāoyǔ. The sections above still apply; where this section is more specific for iPhone, this section governs. The iPhone app has no accounts, no advertising, no tracking, and sends nothing to servers run by us. It makes no network requests of its own: tapping the privacy-policy link in Settings opens this page in Safari, and the share sheet only sends what you choose to share.</p>
+<p class="zh">本节适用于悄語的 iPhone 版本。上文各节仍然适用；如本节对 iPhone 的描述更具体，则以本节为准。iPhone 版没有账户、没有广告、没有跟踪，也不会向我们运营的任何服务器发送数据。应用自身不发起任何网络请求：点击“设置”中的隐私政策链接会在 Safari 中打开本页，分享面板只发送您选择分享的内容。</p>
+<ul>
+  <li><strong>Speech recognition (Apple).</strong> When you dictate a voice note, the microphone audio is passed to Apple's iOS speech recognition (<code>SFSpeechRecognizer</code>), which turns it into text. Apple may process that audio on Apple's servers, under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>; this is done by iOS, not by us, and we never receive the audio from Apple. The app also saves your own recording as an audio file on your device so you can replay it. If you decline the Microphone or Speech Recognition permission, you can still write and photograph thoughts.</li>
+  <li><strong>On-device processing.</strong> Reading text from photos (Google ML Kit text recognition), the emotional-tone analysis, and the BaZi and Human Design calculations all run on your iPhone. Your photos and text are not uploaded for this. The ML Kit library may send Google technical diagnostics when you use text recognition: your device model and OS version, the app's bundle ID and version, a per-installation identifier, performance measurements, and event and error codes. These are not linked to your identity, contain none of your photos or text, and are not used for tracking.</li>
+  <li><strong>Location (While Using the App).</strong> If you switch on location for a thought, iOS asks for permission to use your location while the app is open. The coordinates are saved with that entry on your iPhone. To show a place name, the app asks Apple's geocoding service to look up the coordinates (<code>CLGeocoder</code>), so Apple receives those coordinates for that request under Apple's Privacy Policy; we do not receive them. Qiāoyǔ never tracks you in the background.</li>
+  <li><strong>Face ID, Touch ID and passcode.</strong> The optional app lock uses Apple's Local Authentication. Face ID or Touch ID matching is done by iOS; the app only learns whether it succeeded and never sees or stores biometric data. If biometrics are unavailable, iOS may offer your device passcode instead. Your 6-digit app PIN is stored on your iPhone.</li>
+  <li><strong>Notifications.</strong> Evening check-in reminders are local notifications scheduled on your iPhone after you allow them. They are not push notifications, and no notification data leaves the device. You can turn them off in the app or in iOS Settings.</li>
+  <li><strong>Camera and photo library.</strong> The camera is used only when you choose to photograph a thought. If you pick an existing photo, iOS shows its own photo picker and gives the app only the photo you select.</li>
+  <li><strong>Purchases.</strong> There are no in-app purchases, subscriptions or ads in this version, and no payment information is collected. If purchases are added in a future version, they will be processed by Apple's App Store (we would never see your payment details), and this policy will be updated first.</li>
+  <li><strong>Backups and export.</strong> The iPhone app does not exclude its data from device backups. If you back up your iPhone with iCloud or to a computer, the journal data stored in the app may be included in that backup, which is controlled by you and Apple under your Apple Account settings; we cannot access it. Exports, PDFs and shared text go only where you send them from the share sheet or print dialog.</li>
+  <li><strong>Deleting your data.</strong> Use Settings → Clear All Data in the app, or delete the app from your iPhone. Backups you made earlier remain under your control in iCloud or on your computer until you delete them.</li>
+</ul>
+<p class="zh"><strong>语音识别（Apple）。</strong>语音记录时，麦克风音频会交给 Apple 的 iOS 语音识别（SFSpeechRecognizer）转换为文字。Apple 可能在其服务器上处理这些音频，适用 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a>；这由 iOS 完成，不是我们，我们不会收到 Apple 处理的音频。应用还会把您自己的录音以音频文件形式保存在设备上，供您回放。如果您拒绝麦克风或语音识别权限，仍可使用文字和照片记录。<br>
+<strong>设备端处理。</strong>从照片中识别文字（Google ML Kit）、情绪基调分析以及八字与人类图计算都在您的 iPhone 上完成，不会为此上传您的照片或文字。使用文字识别时，ML Kit 库可能向 Google 发送技术诊断信息：设备型号与系统版本、应用的 Bundle ID 与版本、每次安装的标识符、性能指标以及事件和错误代码。这些信息不与您的身份关联，不包含您的照片或文字，也不用于跟踪。<br>
+<strong>位置（使用应用期间）。</strong>如果您为某条想法开启位置，iOS 会请求“使用应用期间”的位置权限，坐标随该条目保存在您的 iPhone 上。为显示地名，应用会请 Apple 的地理编码服务（CLGeocoder）查询这些坐标，因此 Apple 会为该次请求收到坐标，适用 Apple 隐私政策；我们不会收到。悄語不会在后台追踪您。<br>
+<strong>Face ID、Touch ID 与锁屏密码。</strong>可选的应用锁使用 Apple 的 Local Authentication。Face ID 或 Touch ID 的匹配由 iOS 完成，应用只知道是否成功，不会接触或存储生物识别数据。如果生物识别不可用，iOS 可能改用设备密码。您的 6 位应用 PIN 保存在 iPhone 本地。<br>
+<strong>通知。</strong>晚间复盘提醒是在您允许后于 iPhone 本地安排的本地通知，不是推送通知，任何通知数据都不会离开设备。您可在应用内或 iOS 设置中关闭。<br>
+<strong>相机与相册。</strong>只有当您选择拍摄照片想法时才会使用相机。如果您选取已有照片，iOS 会显示系统自带的照片选择器，应用只会获得您所选的照片。<br>
+<strong>购买。</strong>此版本没有应用内购买、订阅或广告，也不收集任何支付信息。如果将来增加购买，将由 Apple 的 App Store 处理（我们不会看到您的支付信息），并会先更新本政策。<br>
+<strong>备份与导出。</strong>iPhone 版不会将其数据排除在设备备份之外。如果您使用 iCloud 或电脑备份 iPhone，应用中存储的日记数据可能包含在该备份内，由您和 Apple 在您的 Apple 账户设置下管理，我们无法访问。导出文件、PDF 和分享的文字只会发送到您在分享面板或打印对话框中选择的位置。<br>
+<strong>删除数据。</strong>在应用内使用“设置 → 清除所有数据”，或从 iPhone 上删除应用。您之前创建的备份仍由您自己在 iCloud 或电脑上管理，直至您删除。</p>
 
 <h2>5. Children <span class="zh">/ 儿童</span></h2>
 <p>Qiāoyǔ is not directed at children under 13 and does not knowingly collect data from anyone (see section 3).</p>
